@@ -12,5 +12,16 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!--            Fonts-->
+        <item name="android:fontFamily">@font/josefinsans_variablefont_wght</item>
+        <item name="fontFamily">@font/josefinsans_variablefont_wght</item>
+    </style>
+
+
+    <!--  style is for the splash screen -->
+    <style name="Theme.MedLocator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>
