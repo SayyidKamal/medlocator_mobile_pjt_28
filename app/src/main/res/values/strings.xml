@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MedLocator</string>
+    <string name="welcome_text">MedLocator helps you to locate a nearby pharmacy to buy your meds</string>
+    <string name="txt_next">Next</string>
 </resources>
