@@ -9,17 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedLocator">
-        <activity android:name=".Activities.WelcomeScreen" android:theme="@style/Theme.MedLocator.NoActionBar"/>
+        <activity android:name=".Pharmacist.UpdateSuccessful"></activity>
+        <activity android:name=".Pharmacist.InfoOnCovid" />
+        <activity android:name=".Pharmacist.UpdateInventory" /> <!-- <activity android:name=".Activities.FAQs"></activity> -->
+        <activity android:name=".Pharmacist.ContactUs" />
+        <activity android:name=".Pharmacist.About" />
+        <activity android:name=".Pharmacist.HelpSupport" />
+        <activity android:name=".Pharmacist.Privacy_Security" />
+        <activity android:name=".Pharmacist.UpdateAcoountInfo"/>
         <activity
-            android:name=".Activities.SplashActivity"
-            android:theme="@style/Theme.MedLocator.NoActionBar">
+            android:name=".Activities.PharmacyActivity"
+            android:label="@string/title_activity_pharmacy"
+            android:theme="@style/Theme.MedLocator.NoActionBar" />
+        <activity
+            android:name=".Activities.WelcomeScreen"
+            android:theme="@style/Theme.MedLocator.NoActionBar" />
+        <activity android:name=".Activities.FAQs" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".StartUpLink" />
+        <activity android:name=".SignUpGuide" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.MainActivity" />
     </application>
 
 </manifest>

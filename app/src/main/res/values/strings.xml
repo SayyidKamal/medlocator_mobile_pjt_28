@@ -2,4 +2,40 @@
     <string name="app_name">MedLocator</string>
     <string name="welcome_text">MedLocator helps you to locate a nearby pharmacy to buy your meds</string>
     <string name="txt_next">Next</string>
+    <string name="title_activity_pharmacy">PharmacyActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="language_prompt">Choose a Language</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="Quantity_prompt">Quantity</string>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Portuguese</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string-array name="Countries">
+        <item>Nigeria</item>
+        <item>Ghana</item>
+        <item>South Africa</item>
+        <item>Angola</item>
+    </string-array>
+
+    <string-array name="Quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>
