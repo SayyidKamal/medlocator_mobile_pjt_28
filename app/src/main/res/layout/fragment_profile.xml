@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/profile_image"
+            android:layout_marginVertical="15dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="7"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy Name"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtNameOfStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medplus Pharmacy"
+                android:textFontWeight="400"
+                android:layout_marginTop="15dp"
+                android:textColor="#635E5E"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner’s Full name"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtOwnersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Oluwaseun Ajayi John"
+                android:textFontWeight="400"
+                android:layout_marginTop="15dp"
+                android:textColor="#635E5E"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="+234 804 564 6474"
+        android:textColor="#635E5E"
+        android:textFontWeight="400"
+        android:textSize="18dp" />
+
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medpluspharm@gmail.com"
+                android:textFontWeight="400"
+                android:layout_marginTop="15dp"
+                android:textColor="#635E5E"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="English"
+                android:textFontWeight="400"
+                android:layout_marginTop="15dp"
+                android:textColor="#635E5E"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nigeria"
+                android:textFontWeight="400"
+                android:layout_marginTop="15dp"
+                android:textColor="#635E5E"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ui.profile.ProfileFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello" />
+
+    </FrameLayout>-->

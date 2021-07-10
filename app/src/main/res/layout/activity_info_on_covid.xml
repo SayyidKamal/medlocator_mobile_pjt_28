@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Pharmacist.InfoOnCovid">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.MedLocator.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_primary"
+            app:popupTheme="@style/Theme.MedLocator.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="3.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There is currently no new update on the COVID-19 virus."
+            android:textFontWeight="700"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please ensure you use wear your nose mask and sanitize "
+            android:textFontWeight="700"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="80dp"
+            android:src="@drawable/pharmacy_nav_header"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

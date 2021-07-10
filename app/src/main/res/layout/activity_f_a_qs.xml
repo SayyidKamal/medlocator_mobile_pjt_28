@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FAQs">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.MedLocator.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_primary"
+            app:popupTheme="@style/Theme.MedLocator.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:childIndicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+        android:divider="@android:color/darker_gray"
+        android:layout_weight="7.5"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="30dp"
+            android:src="@drawable/pharmacy_nav_header"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--
+  <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    &lt;!&ndash;FAQ 1&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="10"
+        android:layout_weight=".7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:text="Can I make an order on this app?"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_next"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="9.6"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/input_text_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="9"
+            android:text="No, this application is mainly for patients to find the nearest pharmacy that has the medicine they are looking for."
+            android:textSize="16dp"
+            android:textFontWeight="400"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/line"/>
+
+
+
+&lt;!&ndash;FAQ 2&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="10"
+        android:layout_weight=".7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:text="Can I make an order on this app?"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_next"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="9.6"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/input_text_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="9"
+            android:text="No, this application is mainly for patients to find the nearest pharmacy that has the medicine they are looking for."
+            android:textSize="16dp"
+            android:textFontWeight="400"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/line"/>
+
+
+
+&lt;!&ndash;FAQ 1&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="10"
+        android:layout_weight=".7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:text="Can I make an order on this app?"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_next"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="9.6"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/input_text_background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+        <TextView
+            android:paddingHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="9"
+            android:text="No, this application is mainly for patients to find the nearest pharmacy that has the medicine they are looking for."
+            android:textSize="16dp"
+            android:textFontWeight="400"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_primary"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/line"/>
+-->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="team28.zuri.medlocator.Activities.ui.home.HomeFragment"
+        android:label="Pharmacy Screen"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="team28.zuri.medlocator.Activities.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="team28.zuri.medlocator.Activities.ui.navigation.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/notification_fragment" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="team28.zuri.medlocator.Activities.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
